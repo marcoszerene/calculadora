@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Quincho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Calculadora de Costos de Quincho</h1>
+
+        <div class="input-section">
+            <label for="metrosCuadrados">Metros Cuadrados (m²):</label>
+            <input type="number" id="metrosCuadrados" min="1" value="0">
+        </div>
+
+        <div class="input-section">
+            <label for="cantidadPalmeras">Cantidad de Palmeras:</label>
+            <input type="number" id="cantidadPalmeras" min="0" value="0">
+        </div>
+
+        <div class="input-section">
+            <label for="kilosClavos">Kilos de Clavos:</label>
+            <input type="number" id="kilosClavos" min="0" value="0">
+        </div>
+
+        <div class="input-section">
+            <label for="kmFlete">Km de Flete:</label>
+            <input type="number" id="kmFlete" min="0" value="0">
+        </div>
+
+        <div class="input-section">
+            <label for="diasTrabajo">Días de Trabajo:</label>
+            <input type="number" id="diasTrabajo" min="0" value="0">
+        </div>
+
+        <div class="input-section">
+            <label for="porcentajeGanancia">% de Ganancia:</label>
+            <input type="number" id="porcentajeGanancia" min="0" value="0">
+        </div>
+
+
+        <button onclick="calcularCostos()">Calcular Costos</button>
+
+        <div class="results-section">
+            <h2>Detalle de Costos:</h2>
+            <p>Paja: <span id="costoPaja">$0.00</span></p>
+            <p>Madera: <span id="costoMadera">$0.00</span></p>
+            <p>Palmeras: <span id="costoPalmeras">$0.00</span></p>
+            <p>Clavos: <span id="costoClavos">$0.00</span></p>
+            <p>Flete: <span id="costoFlete">$0.00</span></p>
+            <p>Mano de Obra (Total): <span id="costoManoObra">$0.00</span></p>
+            <p>Seguro Camión: <span id="costoSeguroCamion">$0.00</span></p>
+            <p>Desayuno: <span id="costoDesayuno">$0.00</span></p>
+
+            <h3>Resumen:</h3>
+            <p>Costo Total (Subtotal): <span id="costoTotal">$0.00</span></p>
+            <p>Costo por m²: <span id="costoPorM2">$0.00</span></p>
+            <p>Ganancia Estimada: <span id="ganancia">$0.00</span></p>
+            <p><strong>Precio Total del Quincho: <span id="precioTotalQuincho">$0.00</span></strong></p>
+            <p>Valor Total por m²: <span id="valorTotalPorM2">$0.00</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
